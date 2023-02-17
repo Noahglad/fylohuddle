@@ -1,0 +1,280 @@
+/* Google fonts */
+@import url(https://fonts.google.com/specimen/Raleway);
+@import url(https://fonts.google.com/specimen/Open+Sans);
+
+/* Resetting */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* General styling for the header tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 1rem 0;
+}
+
+/* General styling for the p tags */
+p {
+  color: hsl(238, 22%, 44%);
+  font-family: "Open Sans", sans-serif;
+  padding: 0.8rem 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* The menu section and its children */
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem;
+}
+.menu-section img {
+  width: 6rem;
+}
+.menu-section .menu-links,
+ul,
+li,
+a {
+  display: flex;
+  color: hsl(224, 93%, 58%);
+  gap: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+/* Styling for all the sections */
+.header-section,
+.section-two,
+.section-three,
+.section-four {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  align-items: center;
+}
+
+/* The divisions under the sections */
+.header-left,
+.section-two-left,
+.section-three-left {
+  width: 50%;
+}
+.header-right,
+.section-two-right,
+.section-three-right {
+  width: 50%;
+}
+.header-right img,
+.illustr-2 {
+  width: 100%;
+}
+
+/* General styling for the inputs on the page */
+input {
+  padding: 0.4rem 0.2rem;
+  outline: none;
+  border-radius: 0.2rem solid #c0c0c0;
+}
+
+/* General styling for the buttons on the page */
+button {
+  padding: 0.5rem 0.6rem;
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  border-radius: 0.1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  box-shadow: 2px 3px 1px 2px 3px 2px #928383;
+}
+/* Section two basically */
+.section-two {
+  background: url(./images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+/* Testimonial part */
+.testimonial {
+  margin: 2rem 0;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 2px 2px #c0c0c0;
+}
+.testimonial p {
+  font-size: 0.7rem;
+}
+.testimonial .profile {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  align-items: center;
+}
+.testimonial .profile h2 {
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+.testimonial .profile p {
+  padding: 0;
+
+  line-height: 1;
+}
+.testimonial .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Section three */
+.section-three {
+  background-color: hsl(238, 22%, 44%);
+ justify-content: space-between;
+ gap: 0  20rem;
+ padding: 4rem 3rem;
+}
+
+.section-three-left{
+     width: 50%;
+}
+.section-three-right{
+     width: 50%;
+}
+.section-three p {
+  color: #fff;
+}
+
+.section-three h2{
+     color: #fff;
+     font-size: 1.5rem;
+}
+
+/* Section four styling */
+.section-four {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 3rem;
+}
+
+.section-four-one {
+  margin-top: -6rem;
+}
+.section-four-one p{
+     color: #fff;
+
+}
+.fa-brands{
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid ;
+}
+.section-four-one img{
+     width: 7rem;
+  color: #fff;
+     
+}
+/* The styling for the links in the footer */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.info-icon img{
+  width: 1rem;
+ margin: 0 0.3rem;
+}
+/* The attribution at the bottom of the page */
+.attribution {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.attribution a {
+  color: red;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:390px) {
+  .header-section, .section-two, .section-three, .section-four{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .header-left,
+.section-two-left,
+.section-three-left {
+  width: 100%;
+}
+
+
+.header-right,
+.section-two-right,
+.section-three-right {
+  width: 100%;
+}
+
+.menu-section{
+  display: flex;
+  padding: 1rem;
+}
+ .menu-links ul{
+gap: 0;
+font-size: 0.8rem;
+}
+.menu-section .menu-links{
+  gap: 1rem;
+ }
+
+.header-section,
+.section-two,
+.section-three{
+  padding: 2rem 1rem;
+}
+
+.section-four{
+padding-left: 1rem;
+}
+
+input{
+  width: 100%;
+  margin:  5px 0; 
+}
+button{
+  width: 100%;
+  margin-left: 0;
+}
+}
